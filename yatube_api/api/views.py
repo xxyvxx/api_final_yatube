@@ -32,7 +32,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         response = super().create(request, *args, **kwargs)
-        response.status_code = 201  
+        response.status_code = 201
         return response
 
 
